@@ -4,12 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment-27</title>
     <script src="./app.js" defer></script>
 </head>
+<style>
+    /* General styles */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+
+    .container {
+        margin: 50px auto;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button {
+        padding: 12px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+
+
+    button {
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #66e6f7;
+    }
+
+    /* List styles */
+    ul {
+        padding: 0;
+        margin: 20px, 0;
+    }
+
+    li {
+        list-style: decimal;
+        padding: 12px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .delete-btn {
+        background-color: #8f251a;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .delete-btn:hover {
+        background-color: #e93723c2;
+    }
+</style>
 
 <body>
+    <div class="container">
+        <div>
+            <input type="text" class="input_name" placeholder="Enter Your Name">
+            <input type="number" class="input_donate" placeholder="Enter Your donation">
+            <button class="btn_donate">Donate</button>
+        </div>
+        <ul class="doners_container"></ul>
+    </div>
 
+    <script src="your-script.js"></script>
 </body>
+
 
 </html>
